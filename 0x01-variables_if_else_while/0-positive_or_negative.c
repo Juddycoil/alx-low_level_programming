@@ -5,7 +5,7 @@
 /**
  * main - Random number to variable n,when excuted print positive or negative
  *
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
