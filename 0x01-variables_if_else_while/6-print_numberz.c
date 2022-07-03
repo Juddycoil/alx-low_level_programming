@@ -2,18 +2,18 @@
 
 /**
  * main - Entry point
- * print single digit numbers of base '10' from '0 '
- * Retrun: Always 0 (Success)
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int ch;
+int i;
 
-for (ch = 48; ch <= 57; ch++)
+for (i = '0'; i <= '9'; i++)
 {
-	putchar(ch);
+	putchar(i);
 }
 putchar(10);
 
-retrun(0);
+return (0);
 }
