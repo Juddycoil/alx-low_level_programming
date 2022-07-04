@@ -27,10 +27,8 @@ putchar(32);
 }
 }
 }
-}
 putchar(10); /*ASCII for new line */
 
 return (0);
-
 
 }
