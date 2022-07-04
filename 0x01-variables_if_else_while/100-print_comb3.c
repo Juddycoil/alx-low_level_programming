@@ -7,27 +7,24 @@
  */
 int main(void)
 {
-int ch;
-int n;
+int digit1, digit2;
 
-for (ch = 48; ch <= 57; ch++)
+for (digit1 = 0; digit1 < 9; digit1++)
 {
-for (n = 49; n <= 57; ch++)
+for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 {
-if (n > ch)
-{
-putchar(ch);
-putchar(n);
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
 
-if (ch != 56 || n != 57)
-{
-putchar(44);
-putchar(32);
+if (digit1 == 8 && digit2 == 9)
+	continue;
+
+putchar(',');
+putchar(' ');
+
 }
 }
-}
-}
-putchar(10); /*ASCII for new line */
+putchar(10);
 
 return (0);
 

@@ -7,22 +7,27 @@
  */
 int main(void)
 {
-int ch;
-int n;
-for (ch = 48; ch <= 57; ch++)
+int digit1, digit2;
+
+for (digit1 = 0; digit1 <= 98; digit1++)
 {
-for (n = 48; n <= 57; n++)
+for (digit2 = digit1 + 1; digit2 <= 99; digit2++)
 {
-putchar(ch);
-putchar(n);
-if (ch != 57 || n != 57)
+putchar((digit1 / 10) + '0');
+putchar((digit1 % 10) + '0');
+putchar(32);
+putchar((digit2 / 10) + '0');
+putchar((digit2 % 10) + '0');
+
+if (digit1 / 10 != 9 || digit1 % 10 != 8)
+
 {
 putchar(44);
 putchar(32);
 }
 }
-}
 
+}
 putchar(10);
 
 return (0);
