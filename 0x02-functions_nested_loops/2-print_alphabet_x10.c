@@ -2,8 +2,6 @@
 
 /**
  * print_alphabet_x10 - Print ten times the alphabet
- *
- * Return: Always 0 (Success)
  */
 void print_alphabet_x10(void)
 {
@@ -17,6 +15,4 @@ for (j = 0; j < 10; j++)
 	}
 	_putchar('\n')
 }
-
-return (0);
 }
