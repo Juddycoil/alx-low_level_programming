@@ -3,19 +3,20 @@
 /**
  * print_numbers - print number from zero to nine
  *
- * Return: Always 0 (Success)
+ * Return: nothing
  */
 void print_numbers(void)
 
 {
-int a = 0;
-a++;
+int a;
+a = 0;
+
 while (a < 10)
 
 	{
 	_putchar(a);
+	a++;
 	_putchar('\n');
 	}
 
-	return (0);
 }
