@@ -3,14 +3,17 @@
 /**
  * print_numbers - print number from zero to nine
  *
- * Return: return nothing
+ * Return: Always 0 (Success)
  */
 void print_numbers(void)
 
 {
-int number = 48;
-	for (number = 48; number < 58; number++)
-	_putchar(number);
-_putchar(10);
+int a;
+	for (a = 0; a <= 9; a++)
+	{
+	_putchar(a);
+	_putchar('\n');
+	}
 
+	return (0);
 }
