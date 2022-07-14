@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+
 /**
  * puts_half - print half of a strig
  * @str: parameter
@@ -16,8 +17,7 @@ if (a % 2 == 1)
 else
 	b = a / 2;
 for (y = b; y < a; y++)
-{
 	_putchar(str[y]);
 	_putchar('\n');
-}
+
 }
