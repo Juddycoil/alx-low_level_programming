@@ -18,9 +18,8 @@ while (s[a])
 	while (b < l)
 {
 	if (s[a] == tr[b] || s[a] - 32 == tr[b])
-{		s[a] = trl[b];
-		b++;
-}
+	s[a] = trl[b];
+	b++;
 }
 a++;
 
