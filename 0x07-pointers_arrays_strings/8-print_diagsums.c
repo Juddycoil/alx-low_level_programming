@@ -1,0 +1,27 @@
+#include "main.h"
+
+/**
+* print_diagsums - sum of the two diagonals of a square matrix of int
+* @a: array param
+* @size: int param
+* Return: nothing
+*/
+void print_diagsums(int *a, int size)
+
+{
+
+int b, sum1 = 0, sum2 = 0;
+
+	for (b = 0; b < size; b++)
+{
+	sum1 += a[(size + 1) * b];
+	sum2 += a[(size - 1) * (b + 1)];
+}
+{
+_putchar(sum1);
+_putchar(sum2);
+
+}
+_putchar('\n');
+
+}
