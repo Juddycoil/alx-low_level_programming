@@ -4,14 +4,16 @@
 /**
 * *_memset - fills memory with a constant byte
 * @s: memory dest
-* @b: value 
+* @b: value
 * @n: number of byte
 * Return: string
 */
 char *_memset(char *s, char b, unsigned int n)
 {
 
-memset(s,b,n);
+n = sizeof(b);
+
+r = memset(s, b, n);
 
 return (s);
 }
