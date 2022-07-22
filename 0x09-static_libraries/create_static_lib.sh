@@ -6,4 +6,4 @@ ar -rc liball.a *.o
 echo "Compiled object files"
 echo "====================="
 ar -t liball.a
-echo "Complete."
+echo "Complete..."
