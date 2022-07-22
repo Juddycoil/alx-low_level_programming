@@ -7,3 +7,4 @@ echo "Compiled object files"
 echo "====================="
 ar -t liball.a
 echo "Complete."
+ranlib libschool.a
