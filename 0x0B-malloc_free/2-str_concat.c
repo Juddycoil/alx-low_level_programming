@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
 * *str_concat - concatenates two strings space in heap
@@ -11,27 +10,34 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0;
-	char *a, *b, *c;
+	int i = 0, j = 0, l = 0, h = 0;
+	char *c;
 
-	while (s1[i])
-		i++;
-	while (s2[j])
-		j++;
-	{
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	}
-	a = (char *)malloc(i * sizeof(char));
-		s1 = a;
-	b = (char *)malloc(j * sizeof(char));
-		s2 = b;
-	c = strcat(a, b);
+	while (s1[i])
+		i++;
+	while (s2[j])
+		j++;
+
+	l = i + j;
+	c = (char *)malloc(l * sizeof(char) + 1);
+	if (c == NULL)
+		return (NULL);
+	j = 0;
+	while (h < l)
 	{
-		if (c == NULL)
-			return (NULL);
+		if (h < i)
+			c[h] = s1[h];
+		if (h >= i)
+		{
+			c[h] = s2[j];
+			j++;
+		}
+		h++;
 	}
-	return (s1);
+	c[h] = '\0';
+	return (c);
 }
